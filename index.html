@@ -1,12 +1,4 @@
-<script src="app.js"></script>
-  <script>
-    // Register service worker
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js')
-        .then(reg => console.log("Service Worker registered:", reg.scope))
-        .catch(err => console.error("SW registration failed:", err));
-    }
-  </script><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="bn">
 <head>
   <meta charset="UTF-8" />
