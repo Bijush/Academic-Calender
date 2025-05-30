@@ -1,0 +1,260 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding:0;
+      background-color: #f0f4f8;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      border: 1px solid blue;
+      min-width: 70px;
+      height: 100px;
+      vertical-align: top;
+      padding: 6px;
+      position: relative;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    td {
+      cursor: pointer;
+    }
+    .sunday {
+      background-color: #ffeaea;
+    }
+    td.holiday {
+      background-color: #f44336;
+      color: white;
+    }
+    td.sunday {
+      background-color: #e91e63;
+      color: white;
+    }
+    .class-day {
+      background-color: #e6ffe6;
+    }
+    .badge-class {
+      background-color: #8bc34a;
+    }
+    .badge-exam,
+    .badge-holiday,
+    .badge-event,
+    .badge-preparation,
+    .badge-result,
+    .badge-class {
+      display: block;
+      margin-top: 5px;
+      padding: 3px;
+      font-size: 8px;
+      border-radius: 4px;
+    }
+    .badge-event {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .badge-holiday {
+      background-color: #f44336;
+    }
+    td.holiday {
+      background-color: #f44336;
+      color: white;
+    }
+    .badge-exam {
+      background-color: #4caf50;
+    }
+    td.exam {
+      background-color: #2196f3;
+      color: white;
+    }
+    .badge-result {
+      background-color: #fff3cd;
+      color: #856404;
+    }
+    .badge-preparation {
+      background-color: #d1ecf1;
+      color: #0c5460;
+    }
+    .badge-exam::before {
+      content: "✏️ ";
+    }
+    .badge-result::before {
+      content: "📄 ";
+    }
+    .badge-preparation::before {
+      content: "🛠️ ";
+    }
+    select {
+      font-size: 1rem;
+      padding: 4px 8px;
+      margin-bottom: 1rem;
+    }
+    .calendar-container {
+      overflow-x: auto;
+      width: 100%;
+      margin: 0 auto;
+       padding: 0;
+    }
+    .tooltip {
+      position: absolute;
+      background-color:black;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      display: none;
+      font-size: 14px;
+      max-width: 200px;
+      z-index: 1000;
+    }
+    #showright {
+      overflow-x: auto;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap:5px;
+      background-color:red;
+      board:1px solid;
+    }
+    .left-div,
+    .right-div {
+      flex: 1;
+      min-width: 300px;
+      background: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+    }
+    .summary {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    .summary ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .summary li {
+      margin: 8px 0;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+    }
+    #exam-details {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+    #exam-details ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    #exam-details li {
+      margin: 8px 0;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+    }
+    td:hover {
+      background-color: #f0f8ff;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    td .badge-holiday:hover,
+    td .badge-exam:hover,
+    td .badge-event:hover,
+    td .badge-class:hover,
+    td .badge-preparation:hover,
+    td .badge-result:hover {
+      background-color: #fffae6;
+      color: #000;
+      border-radius: 8px;
+    }
+    footer {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 10px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      font-size: 14px;
+      z-index: 1000;
+      transition: opacity 0.3s ease;
+    }
+    /* Modal styles */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 2000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    .modal-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 400px;
+      text-align: left;
+      position: relative;
+    }
+    .close-btn {
+      color: #aaa;
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close-btn:hover,
+    .close-btn:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .today {
+  background-color:blue; 
+  color: white;               
+  font-weight: bold;         
+  border: 2px solid #fbc02d;
+}
+
+label {
+  font-weight: bold;
+  font-size: 10px;
+  color:red;
+  margin-right: 10px;
+}
