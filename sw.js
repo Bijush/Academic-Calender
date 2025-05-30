@@ -1,7 +1,7 @@
-const CACHE_NAME = 'student-tracker-cache-v1';
+const CACHE_NAME = 'pwa-cache-v1';
 const urlsToCache = [
   'index.html',
-  'style.css',
+  'styles.css',
   'app.js',
   'manifest.json',
   'icon.png'
