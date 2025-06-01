@@ -62,7 +62,7 @@ body {
       display: block;
       margin-top: 5px;
       padding: 3px;
-      font-size: 8px;
+      font-size: 10px;
       border-radius: 4px;
     }
     .badge-event {
@@ -87,6 +87,16 @@ body {
       background-color: #fff3cd;
       color: #856404;
     }
+    
+    .badge-bSapta {
+      background-color: #fff3c0;
+      color: #856404;
+    }
+    .badge-advancePlanning{
+        background-color: #fff3c0;
+      color: #856404;
+    }
+    
     .badge-preparation {
       background-color: #d1ecf1;
       color: #0c5460;
@@ -109,7 +119,9 @@ body {
       overflow-x: auto;
       width: 100%;
       margin: 0 auto;
-       padding: 0;
+      padding: 10px 0;
+      font-weight:bold;
+      color:blue;
     }
     .tooltip {
       position: absolute;
@@ -131,8 +143,8 @@ body {
       background-color:red;
       board:1px solid;
     }
-    .left-div,
-    .right-div {
+    #left-div,
+    #right-div ,#note{
       flex: 1;
       min-width: 300px;
       background: #fff;
@@ -181,6 +193,30 @@ body {
       border-radius: 6px;
       background-color: #f9f9f9;
     }
+    
+   #notesDetails{
+   max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      text-align: left;
+       
+   }
+     #notesDetails ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    #notesDetails li {
+      margin: 8px 0;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #f9f9f9;
+    }
+    
+    
     td:hover {
       background-color: #f0f8ff;
       cursor: pointer;
@@ -193,7 +229,7 @@ body {
     td .badge-preparation:hover,
     td .badge-result:hover {
       background-color: #fffae6;
-      color: #000;
+      color: indigo;
       border-radius: 8px;
     }
     footer {
