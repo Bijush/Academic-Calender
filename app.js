@@ -8,7 +8,7 @@ const holidays = {
   "2025-02-12": "বীর চিলারায় দিবস",
   "2025-03-14": "দোল যাত্রা",
   "2025-03-31": "ইদ-উল-ফিতর",
-  "2025-04-01": "বার্ষিক হিসাব বন্ধ (ব্যাংক ছুটি)",
+ 
   "2025-04-14": "বোহাগ বিহু (প্রথম দিন)",
   "2025-04-15": "বোহাগ বিহু (দ্বিতীয় দিন)",
   "2025-04-16": "বোহাগ বিহু (তৃতীয় দিন)",
@@ -44,7 +44,7 @@ const holidays = {
   "2026-01-27": "গুথার বাথৌ সান",
   "2026-01-31": "মে-দাম-মে-ফি",
   "2026-02-01": "বীর চিলারায় দিবস",
-  "2026-03-02": "দোল যাত্রা",
+  "2026-03-04": "দোল যাত্রা",
   "2026-03-21": "ইদ-উল-ফিতর",
   "2026-04-01": "বার্ষিক হিসাব বন্ধ (ব্যাংক ছুটি)",
   "2026-04-03": "গুড ফ্রাইডে",
@@ -121,18 +121,79 @@ const holidays = {
       "2025-06-26": "First Formative Assessment",
       "2025-06-27": "First Formative Assessment",
       "2025-06-28": "First Formative Assessment",
-      "2025-12-01": "Unit Test",
-      "2026-02-10": "Final পরীক্ষা"
+      
+      
+       "2025-09-19": "First Summative Assessment",
+       "2025-09-20": "First Summative Assessment",
+        "2025-09-22": "First Summative Assessment",
+       "2025-09-23": "First Summative Assessment",
+        "2025-09-24": "First Summative Assessment",
+       "2025-09-25": "First Summative Assessment",
+        "2025-09-26": "First Summative Assessment",
+       "2025-09-27": "First Summative Assessment",
+       
+       
+        "2025-11-26": "Second Formative Assessment",
+      "2025-11-27": "Second Formative Assessment",
+      "2025-11-28": "Second Formative Assessment",
+      "2025-11-29": "Second Formative Assessment",
+      "2025-12-03": "Second Formative Assessment",
+      "2025-12-04": "Second Formative Assessment",
+      "2025-12-05": "Second Formative Assessment",
+      
+       "2026-03-10": "Final Summative Assessment",
+       "2026-03-11": "Final Summative Assessment",
+       "2026-03-12": "Final Summative Assessment",
+       "2026-03-13": "Final Summative Assessment",
+       "2026-03-14": "Final Summative Assessment",
+       "2026-03-16": "Final Summative Assessment",
+       "2026-03-17": "Final Summative Assessment",
+       "2026-03-18": "Final Summative Assessment",
+       
     };
+    
+     const bSapta={
+      "2025-12-09": "বিদ্যালয় সপ্তাহ",
+      "2025-12-10": "বিদ্যালয় সপ্তাহ",
+      "2025-12-11": "বিদ্যালয় সপ্তাহ",
+      "2025-12-12": "বিদ্যালয় সপ্তাহ",
+      "2025-12-13": "বিদ্যালয় সপ্তাহ",
+      }
+
+const bSaptaDetails = {
+  "2025-12-9": { name: " 13 তারিখ বিদ্যালয় সপ্তাহ এই দিনগুলোতে বিদ্যালয় এ বিভিন্ন খেলাধুলা অনুষ্ঠিত করা হবে" },
+ 
+};
+
+
 
     const preparationDays = {
-      "2025-08-14": "পরীক্ষা প্রস্তুতি দিন",
-      "2026-02-09": "বার্ষিক প্রস্তুতি দিন"
+      "2026-03-19": "বার্ষিক অগ্রগতির খতিয়ান প্রস্তুতি দিন",
+      "2026-03-20": "বার্ষিক অগ্রগতির খতিয়ান প্রস্তুতি দিন",
+       "2026-03-23": "বার্ষিক অগ্রগতির খতিয়ান প্রস্তুতি দিন",
+      "2026-03-24": "বার্ষিক অগ্রগতির খতিয়ান প্রস্তুতি দিন",
+       "2026-03-25": "বার্ষিক অগ্রগতির খতিয়ান প্রস্তুতি দিন"
+      
     };
 
     const resultDays = {
-      "2025-09-25": "Mid Term ফলাফল",
-      "2026-03-15": "Final ফলাফল প্রকাশ"
+      
+      "2026-03-26": " ফলাফল ঘোষণার দিন",
+       "2027-03-26": " ফলাফল ঘোষণার দিন",
+       "2026-02-02": "2 - 10 February এর ভিতরে ঘুণোৎসব অনুষ্ঠিত করা হবে"
+    };
+    const advancePlanning= {
+      
+      "2026-03-27": "আগন্তক বৎসরের শৈক্ষিক পরিকল্পনা",
+       "2026-03-28": "আগন্তক বৎসরের শৈক্ষিক পরিকল্পনা",
+        "2026-03-30": "আগন্তক বৎসরের শৈক্ষিক পরিকল্পনা",
+         "2026-03-31": "আগন্তক বৎসরের শৈক্ষিক পরিকল্পনা",
+         
+         "2027-03-27": "আগন্তক বৎসরের শৈক্ষিক পরিকল্পনা",
+       "2027-03-29": "আগন্তক বৎসরের শৈক্ষিক পরিকল্পনা",
+        "2027-03-30": "আগন্তক বৎসরের শৈক্ষিক পরিকল্পনা",
+         "2027-03-31": "আগন্তক বৎসরের শৈক্ষিক পরিকল্পনা"
+         
     };
 
     const monthNames = [
@@ -193,18 +254,72 @@ const holidays = {
         time: "10:00 AM - 12:00 PM"
       },
       
-      "2025-12-01": {
-        name: "Unit Test",
-        subjects: ["English", "Math"],
-        time: "10:00 AM - 12:00 PM"
+     "2025-09-19": {
+        name: "First Summative Assessment",
+        subjects: ["Day 1"],
+        time: " 9AM to 12PM"
+      },
+       "2025-09-20": {
+        name: "First Summative Assessment",
+        subjects: ["Day 2"],
+        time: " 9AM to 12PM"
       },
       
-      "2026-02-10": {
-        name: "Final পরীক্ষা",
-        subjects: ["All Subjects"],
-        time: "9:00 AM - 12:30 PM"
-      }
+      "2025-09-22": {
+        name: "First Summative Assessment",
+        subjects: ["Day 3"],
+        time: " 9AM to 12PM"
+      },
+       "2025-09-23": {
+        name: "First Summative Assessment",
+        subjects: ["Day 4"],
+        time: " 9AM to 12PM"
+      },
+      
+      "2025-09-24": {
+        name: "First Summative Assessment",
+        subjects: ["Day 5"],
+        time: " 9AM to 12PM"
+      },
+      
+       "2025-09-25": {
+        name: "First Summative Assessment",
+        subjects: ["Day 6"],
+        time: " 9AM to 12PM"
+      },
+      
+      "2025-09-26": {
+        name: "First Summative Assessment",
+        subjects: ["Day 7"],
+        time: " 9AM to 12PM"
+      },
+       "2025-09-27": {
+        name: "First Summative Assessment",
+        subjects: ["Day 8"],
+        time: " 9AM to 12PM"
+      },
+      
+       "2025-11-26": {
+        name: " 29 November Second Formative Assessment",
+        subjects: ["This Month Total Days 4"],
+        time: "10 AM - 12 PM"
+        },
+        "2025-12-03": {
+        name: " 5 December Second Formative Assessment",
+        subjects: ["This Month Total Days 3"],
+        time: "10 AM - 12 PM"
+        },
+        "2026-02-02": {
+        name: " 28 February এর ভিতরে ঘুণোৎসব অনুষ্ঠিত করা হবে",
+        subjects: ["ঘুণোৎসব অনুষ্ঠিত করা হবে"],
+        time: "1 AM - 5PM"
+        }
+        
+        
+     
     };
+    
+    
 
     // For storing events from user input
     // Events are stored in localStorage with key "calendarEvents" as a JSON object:
@@ -226,9 +341,12 @@ const holidays = {
       monthSelect.appendChild(option);
     }
 
+
+
+
     const today = new Date();
     const currentYear = today.getFullYear();
-    for (let y = currentYear - 1; y <= currentYear + 1; y++) {
+    for (let y = currentYear - 1; y <= currentYear + 4; y++) {
       const option = document.createElement("option");
       option.value = y;
       option.textContent = `${y}-${y + 1}`;
@@ -257,14 +375,31 @@ const holidays = {
       const calendarBody = document.getElementById("calendar-body");
       const summaryList = document.getElementById("summary-list");
       const examDetailsContainer = document.getElementById("exam-details");
+      
+      const notesDetailsContainer = document.getElementById("notesDetails");
+      
       calendarBody.innerHTML = "";
       summaryList.innerHTML = "";
       examDetailsContainer.innerHTML = "";
+      notesDetailsContainer.innerHTML = "";
+       const rightDetailsContainer = document.getElementById("right-div");
+rightDetailsContainer.style.display = "none";
+
+const noteContainer = document.getElementById("note");
+noteContainer.style.display = "none";
+
+
+
 
       let date = 1;
       let sundays = 0, holidayCount = 0, classDays = 0, obsCount = 0;
       const holidayList = [];
       const monthlyExamList = [];
+      const bSaptaList = [];
+      
+      
+      
+      
 
       for (let r = 0; r < 6; r++) {
         const row = document.createElement("tr");
@@ -286,9 +421,12 @@ const holidays = {
               const examInfo = examDetails[key];
               if (examInfo) {
                 monthlyExamList.push(`${date} - ${examInfo.name} (${examInfo.subjects.join(", ")}) - ${examInfo.time}`);
-              }
-            }
+              }                     
+}
 
+
+              
+              
             // Show holiday badge if applicable
             if (holidays[key]) {
               td.classList.add("holiday");
@@ -316,9 +454,30 @@ const holidays = {
             if (preparationDays[key]) {
               td.innerHTML += `<div class="badge-preparation">${preparationDays[key]}</div>`;
             }
+            
             if (resultDays[key]) {
               td.innerHTML += `<div class="badge-result">${resultDays[key]}</div>`;
             }
+            
+            
+            if (bSapta[key]) {
+  td.innerHTML += `<div class="badge-bSapta">${bSapta[key]}</div>`;
+  
+  const bInfo = bSaptaDetails[key] || bSaptaDetails[`${year}-${month + 1}-${date}`]; // fallback to non-zero-padded key
+  if (bInfo && bInfo.name) {
+    bSaptaList.push(`${date} - ${bInfo.name}`);
+  } else {
+    bSaptaList.push(`${date} - ${bSapta[key]}`);
+  }
+}
+
+             // Advance Planning 
+              if (advancePlanning[key]) {
+              td.innerHTML += `<div class="badge-advancePlanning">${advancePlanning[key]}</div>`;
+            }
+             
+                     
+            
 
             // Example: Special summer vacation handling for July (month index 6)
             const isJuly = (month === 6);
@@ -327,7 +486,7 @@ const holidays = {
               td.innerHTML += `<div class="badge-holiday">গ্রীষ্ম বন্ধ</div>`;
               holidayList.push(`${date} - গ্রীষ্ম বন্ধ`);
               holidayCount++;
-            } else if (!isHoliday && c !== 0 && !examDates[key]) {
+            } else if (!isHoliday && c !== 0 && !examDates[key] && !bSapta[key] &&!preparationDays[key]&& !resultDays[key] && !advancePlanning[key]){
               td.classList.add("class-day");
               td.innerHTML += `<div class="badge-class">শ্রেণী দিন</div>`;
               
@@ -359,9 +518,13 @@ const holidays = {
               td.innerHTML += `<div class="badge-event">${calendarEvents[key].title}</div>`;
             }
 
+
+
+
+
             // Attach a tooltip (optional)
             const tooltipText =
-              [holidays[key], ...(celebrations[key] || []), examDates[key], preparationDays[key], resultDays[key]]
+              [holidays[key], ...(celebrations[key] || []), examDates[key], preparationDays[key], resultDays[key],bSapta[key],advancePlanning[key]]
               .filter(Boolean)
               .join(", ");
             if (tooltipText) td.dataset.tooltip = tooltipText;
@@ -384,12 +547,24 @@ const holidays = {
       summaryList.innerHTML += `<li><strong>মোট ছুটি:</strong> ${holidayList.length}</li>`;
       summaryList.innerHTML += `<li><strong>মোট শ্রেণী দিন:</strong> ${classDays}</li>`;
       summaryList.innerHTML += `<li><strong>মোট পালনীয় দিবস:</strong> ${obsCount}</li>`;
+      
+      
 
       if (monthlyExamList.length > 0) {
+      rightDetailsContainer.style.display = "block";
+
         examDetailsContainer.innerHTML = `<h3>এই মাসের পরীক্ষাসমূহ:</h3><ul>${monthlyExamList.map(e => `<li>${e}</li>`).join("")}</ul>`;
       }
-    }
+      
+     if (bSaptaList.length > 0) {
+     noteContainer.style.display="block";
+  notesDetailsContainer.innerHTML += `<li><strong>বার্ষিক প্রস্তুতি দিন:</strong><ul>${bSaptaList.map(n => `<li>${n}</li>`).join("")}</ul></li>`;
+}
 
+   }
+
+
+   
     monthSelect.addEventListener("change", renderCalendar);
     yearSelect.addEventListener("change", renderCalendar);
 
