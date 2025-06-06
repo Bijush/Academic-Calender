@@ -56,7 +56,19 @@
         <div id="notesDetails"></div>
        
   </div>
+  <div id="visitor-count">Visitors: Loading...</div>
+<script>
+fetch('https://api.countapi.xyz/hit/my-github-pwa/home-page')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('visitor-count').textContent = "Visitors: " + data.value;
+    })
+    .catch(() => {
+      document.getElementById('visitor-count').textContent = "Visitors: N/A";
+    });
   
+</script>
+
   <footer>© Bijush Kumar Roy</footer>
  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7552073292756448"
      crossorigin="anonymous"></script>
